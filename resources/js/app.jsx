@@ -4,6 +4,24 @@ import '../css/app.css';
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+import {
+Chart as ChartJS,
+ArcElement,
+Tooltip,
+Legend,
+CategoryScale,
+LinearScale,
+BarElement
+} from 'chart.js'
+
+ChartJS.register(
+ArcElement,
+Tooltip,
+Legend,
+CategoryScale,
+LinearScale,
+BarElement
+)
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 

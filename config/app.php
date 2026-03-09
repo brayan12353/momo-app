@@ -137,6 +137,8 @@ return [
     | Supported drivers: "file", "cache"
     |
     */
+    'timezone' => 'Africa/Douala',
+
 
     'maintenance' => [
         'driver' => 'file',
